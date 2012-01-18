@@ -5,11 +5,10 @@ import numbers.util.NumbersGenerator;
 import numbers.util.PrimesGenerator;
 
 public class FibonacciAndPrimes {
-
 	
 	public static void main(String[] args)
 	{
-		int numbersLimit = 1000000;
+		int numbersLimit = 100000;
 		NumbersGenerator fiboGenerator = new FibonacciGenerator(numbersLimit);
 		NumbersGenerator primesGenerator = new PrimesGenerator(numbersLimit);
 		NumbersQueue fiboQueue = new NumbersQueue("Fibonacci");
