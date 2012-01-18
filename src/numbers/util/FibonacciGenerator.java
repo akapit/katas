@@ -1,4 +1,4 @@
-package numeros;
+package numbers.util;
 
 import java.util.ArrayList;
 import java.util.List;

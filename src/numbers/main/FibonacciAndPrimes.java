@@ -1,4 +1,8 @@
-package numeros;
+package numbers.main;
+
+import numbers.util.FibonacciGenerator;
+import numbers.util.NumbersGenerator;
+import numbers.util.PrimesGenerator;
 
 public class FibonacciAndPrimes {
 
@@ -15,8 +19,8 @@ public class FibonacciAndPrimes {
 		Producer primesProducer = new Producer(primesQueue, primesGenerator);
 		Consumer consumer = new Consumer(fiboQueue, primesQueue, numbersLimit);
 		
-		fibonacciProducer.start();
-		primesProducer.start();
-		consumer.start();
+		new Thread(fibonacciProducer).start();
+		new Thread(primesProducer).start();
+		new Thread(consumer).start();
 	}
 }

@@ -1,6 +1,7 @@
-package numeros;
+package numbers.main;
 
-public class Consumer extends Thread {
+
+public class Consumer implements Runnable {
 	NumbersQueue fibonacciQ;
 	NumbersQueue primesQ;
 	int numbersLimit;
@@ -20,4 +21,5 @@ public class Consumer extends Thread {
 				
 		}		
 	}
+
 }

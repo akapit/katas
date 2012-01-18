@@ -1,4 +1,4 @@
-package numeros;
+package numbers.main;
 
 import java.util.LinkedList;
 

@@ -1,7 +1,8 @@
-package numeros;
+package numbers.util;
 
 import java.util.ArrayList;
 import java.util.List;
+
 
 public class PrimesGenerator implements NumbersGenerator {
 	List<Integer> result = new ArrayList<Integer>();

@@ -1,8 +1,10 @@
-package numeros;
+package numbers.main;
 
 import java.util.List;
 
-public class Producer extends Thread {
+import numbers.util.NumbersGenerator;
+
+public class Producer implements Runnable {
 	NumbersGenerator generator;
 	NumbersQueue queue;
 	
